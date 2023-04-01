@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +18,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
 }
 
 input {
@@ -24,4 +27,50 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+/* Changes made for whole page */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+/* Put top and bottom links into flex boxes */
+
+.left-links,
+.right-links {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
+
+/* Putting space between links for header and footer */
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Adjusting content of page to columns */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* Styling the footer with background color*/
+
+.footer {
+  background-color: gainsboro;
 }
